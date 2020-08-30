@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    background-color: skyblue;
+}
+body > div:first-child{
+    height: 600px;
+    width: 1200px;
+    margin: auto;
+
+}
+
+body > div > div{
+    height: 33%;
+}
+
+body > div > div:first-child {
+ background-color: orange; 
+}
+body > div > div:nth-child(2){
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+body > div > div:nth-child(2) > div{
+    border-radius: 50%;
+    height: 198px;
+    width: 198px;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+body > div > div:nth-child(2) > div > div{
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+body > div > div:nth-child(2) > div> div > div{
+    width: 90px;
+    background-color: darkblue;
+    height: 5px;
+    margin-right: 0;
+    position: absolute;
+    right: 0px;
+    top: 49%;
+
+}
+
+body > div > div:last-child {
+    background-color: green;
+}
